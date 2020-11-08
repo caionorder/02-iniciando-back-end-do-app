@@ -5,7 +5,7 @@ const appointmentsRouter = Router();
 
 const appointments = [];
 
-appointmentsRouter.post('/', (response, request) => {
+appointmentsRouter.post('/', (request, response) => {
   const { provider, date } = request.body;
 
   const appointment = {
